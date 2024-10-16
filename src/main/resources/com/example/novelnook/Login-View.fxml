@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="775.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="566.0" fitWidth="465.0" layoutX="364.0" layoutY="-35.0" pickOnBounds="true" preserveRatio="true" style="c: dark;">
+         <image>
+            <Image url="@../../../images/image-1.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usernameOrEmailText" layoutX="42.0" layoutY="154.0" prefHeight="47.0" prefWidth="293.0" promptText="Username or Email" style="-fx-background-color: #f9fafb; -fx-border-color: #f3f4f6; -fx-border-radius: 8; -fx-background-radius: 8;" />
+      <PasswordField fx:id="passwordText" layoutX="42.0" layoutY="237.0" prefHeight="47.0" prefWidth="294.0" promptText="Password" style="-fx-background-color: #f9fafb; -fx-border-radius: 8; -fx-background-radius: 8; -fx-border-color: #f3f4f6;" />
+      <Label layoutX="43.0" layoutY="130.0" text="Enter Username or Email" />
+      <Label layoutX="45.0" layoutY="213.0" text="Enter Password" />
+      <JFXButton fx:id="signinButton" layoutX="42.0" layoutY="365.0" onAction="#gotoHomePage" prefHeight="47.0" prefWidth="294.0" style="-fx-background-color: #2563eb; -fx-border-radius: 8; -fx-background-radius: 8;" text="Sign In" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="43.0" layoutY="443.0" text="Do you haven't account?">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="signupLink" layoutX="256.0" layoutY="439.0" onAction="#gotoRegisterPage" text="Sign Up Here" />
+      <Label layoutX="43.0" layoutY="24.0" text="Welcome Back !">
+         <font>
+            <Font name="Segoe UI Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="72.0" text="Let's start ">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="remembermeButton" layoutX="42.0" layoutY="316.0" mnemonicParsing="false" text="Remeber me">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <Hyperlink fx:id="forgotPasswordLink" layoutX="237.0" layoutY="313.0" onAction="#gotoUpdatePasswordView" text="Forgot Password" />
+      <ImageView fitHeight="371.0" fitWidth="503.0" layoutX="364.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/image-2-removebg-preview__1___1_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="180.0" layoutX="514.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/novel-nook-book-shop-high-resolution-logo-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="478.0" layoutY="138.0" prefHeight="18.0" prefWidth="266.0" text="A cozy haven for book lovers, Novel Nook is a " textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="469.0" layoutY="158.0" text="charming book shop that invites readers to escape" textFill="WHITE" />
+      <Label layoutX="537.0" layoutY="178.0" text=" into the world of words." textFill="WHITE" />
+   </children>
+</AnchorPane>
